@@ -7,8 +7,6 @@
   /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
-
-
   font-family: 'Helvetica Neue', Arial, sans-serif;
   display: flex;
   flex-direction: column;
@@ -22,7 +20,6 @@
   background-color: #f2f2f2;
   display: flex;
   position: relative;
-  margin: 0;
   padding: 0;
  }
 
@@ -44,7 +41,7 @@
 
 .header__title {
   color: #000;
-  margin: auto;
+  margin: 0;
   font-size: 102px;
   font-weight: bold;
   line-height: 96px;
@@ -102,7 +99,7 @@
 .description {
   width: 80%;
   display: flex;
-  justify-content: space-between;
+
 }
 
 .two-columns {
@@ -115,7 +112,7 @@
 .two-columns__brief {
   display: flex;
   width: 175px;
-  margin: 0 0;
+  margin: 0;
   color: #2f80ed;
   line-height: 1.2;
   font-size: 18px;
@@ -146,6 +143,7 @@
   font-weight: bold;
   font-size: 24px;
   line-height: 34px;
+  margin: 0;
 }
 
 /*блок digits*/
@@ -164,7 +162,7 @@
   text-align: center;
 }
 
-.section__title_theme_white {
+.section__title_theme_light {
   color: #000;
   margin: 100px auto 20px;
 }
@@ -172,6 +170,8 @@
 .section__title_theme_dark {
   color: #fff;
   margin: 90px auto 20px;
+  z-index: 1;
+  /*АЛОЕ ПОЧЕМУ ПЕРЕКРЫВАЕТСЯ?*/
 }
 
 .section__subtitle {
@@ -183,7 +183,7 @@
   text-align: center;
 }
 
-.section__subtitle_theme_white {
+.section__subtitle_theme_light {
   color: #000;
 }
 
@@ -200,7 +200,7 @@
   z-index: 2;
 }
 
-.table_theme_white {
+.table_theme_light {
   margin: 0 auto 100px;
 
 }
@@ -215,18 +215,16 @@
   z-index:2;
 }
 
-.table__cell_theme_white {
+.table__cell_theme_light {
   width: 250px;
   color: #000;
-  margin-right: 0;
-  margin-top: 60px;
+  margin: 60px 0 0;
 }
 
 .table__cell_theme_dark {
   width: 200px;
-  color: white;
-  margin-right: 0;
-  margin-top: 80px;
+  color: #fff;
+  margin: 80px 0 0;
 }
 
 .table__heading {
@@ -237,12 +235,12 @@
   z-index:2;
 }
 
-.table__heading_theme_white {
+.table__heading_theme_light {
   color: #000;
 }
 
 .table__heading_theme_dark {
-  color:#fff;
+  color: #fff;
 }
 
 .table__text {
@@ -253,7 +251,7 @@
   z-index:2;
 }
 
-.table__text_theme_white {
+.table__text_theme_light {
   color: #000;
 }
 
@@ -316,6 +314,7 @@
   background-color: #1f1f1f;
   position: relative;
   overflow: hidden;
+  z-index: -1;
 }
 
 .kaufman__triangle {
@@ -324,7 +323,7 @@
   top: 0;
   width: 877px;
   height: 877px;
-  z-index: 0;
+  z-index: -1;
 
 }
 
@@ -345,13 +344,6 @@
   position: relative;
 }
 
-.footer__columns_content_copyright {
-  display: flex;
-
-  flex-basis: 711px;
-  flex-direction: column;
-}
-
 .footer__author {
   color: #fff;
   margin: 18px 0;
@@ -361,20 +353,25 @@
   position: absolute;
   bottom: 0;
   left: 0;
-
 }
 
-.footer__columns_content_info {
+.footer__column_content_copyright {
+  display: flex;
+  flex-basis: 711px;
+  flex-direction: column;
+}
+
+.footer__column_content_info {
   display: flex;
   flex-direction: column;
 }
 
-.footer__columns_content_social {
+.footer__column_content_social {
   display: flex;
   flex-direction: column;
 }
 
-.footer__columns-heading {
+.footer__column-heading {
   display: flex;
   color: #fff;
   margin: 0;
@@ -389,8 +386,7 @@
   padding: 0;
   margin: 20px 0 16px;
   list-style-type: none;
-
-  }
+}
 
 .footer__column-link {
   color: #fff;
@@ -400,7 +396,6 @@
   font-weight: normal;
   text-decoration: none;
   padding: 0;
-  cursor: none;
   display: flex;
 }
 
