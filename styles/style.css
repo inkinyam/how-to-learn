@@ -105,9 +105,7 @@
 /* блок description*/
 .description {
   width: 80%;
-  display: flex;
-
-}
+  }
 
 .two-columns {
   margin: 100px auto 0;
@@ -117,7 +115,6 @@
  }
 
 .two-columns__brief {
-  display: flex;
   width: 175px;
   margin: 0;
   color: #2f80ed;
@@ -135,12 +132,12 @@
 }
 
 .two-columns__paragraph{
-  display: flex;
   margin: 0 0 30px 0;
   font-weight: normal;
   font-size: 24px;
   line-height: 34px;
   color: #000;
+  padding: 0;
 }
 .two-columns__paragraph:last-of-type{
   margin: 0;
@@ -179,7 +176,6 @@
   color: #fff;
   margin: 90px auto 20px;
   z-index: 1;
-  /*АЛОЕ ПОЧЕМУ ПЕРЕКРЫВАЕТСЯ?*/
 }
 
 .section__subtitle {
@@ -294,7 +290,7 @@
   font-weight: normal;
   margin: 0 auto;
   text-align: center;
-  z-index: 1;
+
 }
 
 .feynman__link {
@@ -306,6 +302,7 @@
   font-weight: normal;
   color: #2f80ed;
   text-decoration: none;
+  z-index: 1;
 }
 
 .feynman__img {
@@ -315,8 +312,6 @@
   width: 867px;
   height: 637px;
   z-index: 0;
-  background-size : contain;
-  background-repeat: no-repeat;
 }
 
 /*блок kaufman*/
@@ -376,7 +371,6 @@
 
 
 .footer__column-heading {
-  display: flex;
   color: #fff;
   margin: 0;
   line-height: 30px;
