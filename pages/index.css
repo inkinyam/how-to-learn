@@ -14,6 +14,9 @@
 @import url(../blocks/header/__main-illustration/header__main-illustration.css);
 @import url(../blocks/header/__square-pic/header__square-pic.css);
 
+/*блок ROTATION*/
+@import url(../blocks/rotation/rotation.css);
+
 /*блок CONTENT*/
 @import url(../blocks/content/content.css);
 
