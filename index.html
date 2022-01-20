@@ -10,8 +10,7 @@
   <div class="page">
 <!--блок header -->
     <header class="header">
-      <div class="logo logo_place_header">
-      </div>
+      <a class="logo logo_place_header" href="#"></a>
       <h1 class="header__title">Научиться учиться</h1>
       <p class="header__subtitle">
           Какие современные и эффективные подходы к обучению вы можете использовать в своей жизни?
@@ -26,16 +25,18 @@
     <main class="content">
 
  <!--блок description -->
-      <section class="description two-columns">
-        <h2 class="two-columns__brief">Главные проблемы в обучении</h2>
-        <div class="two-columns__main-text">
-          <p class="two-columns__paragraph">Ни в школе, ни в институте нас не учат тому, как правильно изучать материал.
-              Мы готовимся к экзаменам и учим билеты. Мы тренируемся решать однообразные задачи,
-              чтобы лучше сдать тест, но часто в итоге это не дает нам реального знания.
-              Зубрежка быстро выветривается и не приносит пользы.</p>
-          <p class="two-columns__paragraph"><span class="two-columns__span-accent">Вывод:</span> учиться тоже нужно уметь, но почему-то этому мало где учат. Что с этим делать?</p>
-          <p class="two-columns__paragraph">Конкретные техники и упражнения помогают изменить подход к обучению, сделать его эффективным
-          и захватывающим. Эти же техники применяются на примере обучения в Практикуме.</p>
+      <section class="description">
+        <div class="two-columns">
+          <h2 class="two-columns__brief">Главные проблемы в обучении</h2>
+          <div class="two-columns__main-text">
+            <p class="two-columns__paragraph">Ни в школе, ни в институте нас не учат тому, как правильно изучать материал.
+                Мы готовимся к экзаменам и учим билеты. Мы тренируемся решать однообразные задачи,
+                чтобы лучше сдать тест, но часто в итоге это не дает нам реального знания.
+                Зубрежка быстро выветривается и не приносит пользы.</p>
+            <p class="two-columns__paragraph"><span class="two-columns__span-accent">Вывод:</span> учиться тоже нужно уметь, но почему-то этому мало где учат. Что с этим делать?</p>
+            <p class="two-columns__paragraph">Конкретные техники и упражнения помогают изменить подход к обучению, сделать его эффективным
+            и захватывающим. Эти же техники применяются на примере обучения в Практикуме.</p>
+          </div>
         </div>
       </section>
 
@@ -99,7 +100,7 @@
    <!--блок feynman -->
    <section class="feynman">
     <h2 class="feynman__title">Метод Фейнмана</h2>
-    <h3 class="feynman__subtitle">Выучить и не забыть</h3>
+    <p class="feynman__subtitle">Выучить и не забыть</p>
     <a href="#" class="feynman__link">Подробнее&rarr;</a>
     <img src="./images/feynman.png" alt="фото Р. Фейнмана" class="feynman__img">
   </section>
@@ -154,12 +155,12 @@
           <p class="khan__quote">Страсть и новаторство Сала Хана меняют процесс обучения миллионов студентов по всему миру.
             Книгу «Весь мир — школа» нужно прочитать всем, кто занимается образованием — так учащиеся повсюду смогут получить навыки и знания,
             которые приносят успех в школе, карьере и жизни.</p>
-          <p class="khan__quote-author">Джордж Лукас</p>
+          <h3 class="khan__quote-author">Джордж Лукас</h3>
           <p class="khan__quote-author-subline">Кинорежисер, продюссер</p>
           <div class="khan__book-container">
-            <div class="khan__book-pic"></div>
+            <img src="./images/khan-book.jpg" class="khan__book-pic">
             <a href="#" class="khan__buy-link">Купить книгу&rarr;</a>
-          </div>
+          </img>
         </div>
       </section>
 
@@ -239,27 +240,27 @@
           </li>
         </ul>
       </section>
+    </main>>
 
-    </main>
- <!--блок footer -->
+    <!--блок footer -->
     <footer class="footer">
       <div class="footer__columns">
         <div class="footer__column footer__column_content_copyright">
-          <div class="logo logo_place_footer"> </div>
+          <a class="logo logo_place_footer" href="#"> </a>
           <p class="footer__author">&copy; Серебренникова Наталья</p>
         </div>
 
-        <div class="footer__column footer__column_content_info">
-          <h2 class="footer__column-heading">О практикуме</h2>
+        <nav class="footer__column footer__column_content_info">
+          <h3 class="footer__column-heading">О практикуме</h3>
           <ul class="footer__column-links">
             <li><a href="#" class="footer__column-link">Главная</a></li>
             <li><a href="#" class="footer__column-link">Концепция</a></li>
             <li><a href="#" class="footer__column-link">Наставники</a></li>
           </ul>
-        </div>
+        </nav>
  <!--решила также исправить тут заголовки h5 на h2, тк в данном разделе заголовков выше уровня также нет, а h1 может быть только один на странице -->
         <div class="footer__column footer__column_content_social">
-          <h2 class="footer__column-heading">Соцсети</h2>
+          <h3 class="footer__column-heading">Соцсети</h3>
           <ul class="footer__column-links">
             <li>
               <a href="#" class="footer__column-link">

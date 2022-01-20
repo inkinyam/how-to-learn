@@ -4,6 +4,7 @@
   margin: 0;
   opacity: 1;
   transition: opacity 0.3s ease;
+  padding: 0;
 }
 
 .resources__logo:hover {
