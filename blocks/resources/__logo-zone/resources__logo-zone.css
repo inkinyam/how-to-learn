@@ -6,6 +6,8 @@
   flex-direction: row;
   list-style-type: none;
   padding: 0;
+  justify-content: center;
 }
 
 /*спасибо! запомню навсегда что нужно обнулять паддинги у списков ^_^*/
+/*добавила распределение элементов по центру*/
